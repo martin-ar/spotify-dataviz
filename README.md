@@ -1,2 +1,2 @@
 # spotify-dataviz
-ongoing website project 
+ongoing website project merging spotify playlist analysis, bar identities and simple datavisualization together !
