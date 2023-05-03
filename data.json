@@ -1,0 +1,192 @@
+{
+  "bars": [
+    {
+      "id": 0,
+      "name": "Atomic Cat",
+      "tags": [
+        "animé",
+        "clubbing",
+        "dansant"
+      ],
+      "detail": "Atomic Cat nous plonge dans un bunker parisien à l'ambiance post-apocaliptique. Les survivants s'engouffrent à l'intérieur dans l'optique d'oublier le chaos régnant au dehors grâce aux boissons et cocktails, mais sortout à s'abandonner au dancefloor. De nombreux groupes et DJ's de la scène alternative viennent régulièrement animer le bar. En prime, de nombreux easter eggs sont à découvrir sur place, saurez-vous les <span class='nobr'>identifier ?</span>",
+      "address": {
+        "addressLine1": "6 Passage Thiére",
+        "zip": 75011,
+        "city": "Paris"
+      },
+      "openDay": "Mardi - Samedi",
+      "openTime": "18:00 - 2:00",
+      "transports": [
+        1,
+        8,
+        5
+      ],
+      "metroStationName": "Bastille|Ledru-Rollin",
+      "links": {
+        "types": [
+          "insta",
+          "facebook"
+        ],
+        "urls": [
+          "instagram.com",
+          "facebook.com"
+        ]
+      },
+      "email": "progra.atomic@gmail.com"
+    },
+    {
+      "id": 1,
+      "name": "Another Bar",
+      "tags": [
+        "jazz",
+        "blues",
+        "live music"
+      ],
+      "detail": "Another Bar is a cozy spot in the heart of the city, with live jazz and blues performances every night. Sip on a classic cocktail and enjoy the ambiance of this local gem.",
+      "address": {
+        "addressLine1": "123 Main St",
+        "zip": 12345,
+        "city": "Anytown"
+      },
+      "openDay": "Everyday",
+      "openTime": "16:00 - 2:00",
+      "transports": [
+        2,
+        3,
+        4
+      ],
+      "metroStationName": "Downtown",
+      "links": {
+        "types": [
+          "twitter",
+          "website"
+        ],
+        "urls": [
+          "twitter.com",
+          "example.com"
+        ]
+      },
+      "email": "info@anotherbar.com"
+    },
+    {
+      "id": 2,
+      "name": "Le Chat Noir",
+      "tags": [
+        "jazz",
+        "cosy",
+        "bar à vin"
+      ],
+      "detail": "Le Chat Noir est un bar cosy au coeur du quartier latin. On y vient pour écouter du jazz en live ou tout simplement pour siroter un verre de vin dans une ambiance conviviale et chaleureuse. La carte propose une belle sélection de vins naturels et bio ainsi que des planches de fromage et de charcuterie. Un endroit parfait pour une soirée entre amis ou en amoureux.",
+      "address": {
+        "addressLine1": "76 Rue Jean-Pierre Timbaud",
+        "zip": 75011,
+        "city": "Paris"
+      },
+      "openDay": "Mardi - Dimanche",
+      "openTime": "18:00 - 2:00",
+      "transports": [
+        2,
+        3,
+        9
+      ],
+      "metroStationName": "République",
+      "links": {
+        "types": [
+          "facebook"
+        ],
+        "urls": [
+          "facebook.com/lechatnoirparis"
+        ]
+      },
+      "email": "contact@lechatnoirparis.com"
+    },
+    {
+      "id": 3,
+      "name": "La Belle Équipe",
+      "tags": [
+        "terrasse",
+        "cocktails",
+        "bistrot"
+      ],
+      "detail": "La Belle Équipe est un bistrot avec une belle terrasse ensoleillée. La carte des cocktails est impressionnante et les plats sont élaborés à partir de produits frais et de saison. L'ambiance est décontractée et chaleureuse, un vrai lieu de vie du quartier. De nombreuses soirées à thème sont organisées tout au long de l'année.",
+      "address": {
+        "addressLine1": "92 Rue de Ménilmontant",
+        "zip": 75020,
+        "city": "Paris"
+      },
+      "openDay": "Lundi - Dimanche",
+      "openTime": "11:00 - 2:00",
+      "transports": [
+        2,
+        3,
+        9
+      ],
+      "metroStationName": "Ménilmontant|Père Lachaise",
+      "links": {
+        "types": [
+          "facebook"
+        ],
+        "urls": [
+          "facebook.com/labelleequipe"
+        ]
+      },
+      "email": "contact@labelleequipe.com"
+    },
+    {
+      "id": 4,
+      "name": "Le Truskel",
+      "tags": [
+        "rock",
+        "live music",
+        "clubbing"
+      ],
+      "detail": "Le Truskel est un bar rock emblématique de Paris. On y vient pour écouter des groupes de rock en live ou tout simplement pour danser sur les classiques du genre. La carte propose des bières artisanales et des cocktails originaux. L'ambiance est survoltée et conviviale, un vrai lieu de rencontre pour les amoureux de la musique.",
+      "address": {
+        "addressLine1": "12 Rue Feydeau",
+        "zip": 75002,
+        "city": "Paris"
+      },
+      "openDay": "Lundi - Dimanche",
+      "openTime": "18:00 - 2:00",
+      "transports": [
+        3,
+        4,
+        8
+      ],
+      "metroStationName": "Parmentier",
+      "links": {
+        "types": [
+          "insta",
+          "facebook"
+        ],
+        "urls": [
+          "instagram.com/lepetitchatnoir",
+          "facebook.com/lepetitchatnoir"
+        ]
+      },
+      "email": "contact@lepetitchatnoir.com"
+    },{
+      "id": 5,
+      "name": "The Library Bar",
+      "tags": [
+        "classique",
+        "calme"
+      ],
+      "detail": "The Library Bar est un bar calme et élégant avec une collection impressionnante de livres. Le bar propose une grande variété de boissons, y compris des cocktails classiques, du whisky, du rhum et du gin. C'est un endroit idéal pour prendre un verre après une journée de travail ou pour discuter avec des amis dans une atmosphère détendue.",
+      "address": {
+        "addressLine1": "21 Rue de l'Université",
+        "zip": 75007,
+        "city": "Paris"
+      },
+      "openDay": "Lundi - Dimanche",
+      "openTime": "16:00 - 23:00",
+      "transports": [63, 69, 87],
+      "metroStationName": "Saint-Germain-des-Prés",
+      "links": {
+        "types": ["insta", "facebook"],
+        "urls": ["instagram.com/thelibrarybar", "facebook.com/thelibrarybar"]
+      },
+      "email": "contact@thelibrarybar.com"
+    }
+  ]
+}
