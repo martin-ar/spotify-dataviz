@@ -32,11 +32,18 @@
           "facebook.com"
         ]
       },
-      "email": "progra.atomic@gmail.com"
+      "contact":{
+        "phoneNumber": ["+33 6 67 24 10 99", "+33 6 58 89 01 00"],
+        "email": "progra.atomic@gmail.com"
+      },
+      "hexColor": {
+        "primary": ["510072","83FD80"],
+        "alternative": ["8204B5,050514"]
+      }
     },
     {
       "id": 1,
-      "name": "Another Bar",
+      "name": "La Soif",
       "tags": [
         "jazz",
         "blues",
@@ -66,11 +73,18 @@
           "example.com"
         ]
       },
-      "email": "info@anotherbar.com"
+      "contact":{
+        "phoneNumber": ["+33 6 67 24 10 99", "+33 6 58 89 01 00"],
+        "email": "lemaitrefreres@gmail.com"
+      },
+      "hexColor": {
+        "primary": ["0057FF","FFFAE0"],
+        "alternative": ["009EE2"]
+      }
     },
     {
       "id": 2,
-      "name": "Le Chat Noir",
+      "name": "L'Estaminet",
       "tags": [
         "jazz",
         "cosy",
@@ -98,11 +112,18 @@
           "facebook.com/lechatnoirparis"
         ]
       },
-      "email": "contact@lechatnoirparis.com"
+      "contact":{
+        "phoneNumber": ["+33 6 67 24 10 99", "+33 6 58 89 01 00"],
+        "email": "lemaitrefreres@gmail.com"
+      },
+      "hexColor": {
+        "primary": ["FF55EE","FCFF7B"],
+        "alternative": []
+      }
     },
     {
       "id": 3,
-      "name": "La Belle Équipe",
+      "name": "Le Popul' Air",
       "tags": [
         "terrasse",
         "cocktails",
@@ -130,11 +151,18 @@
           "facebook.com/labelleequipe"
         ]
       },
-      "email": "contact@labelleequipe.com"
+      "contact":{
+        "phoneNumber": ["+33 6 67 24 10 99", "+33 6 58 89 01 00"],
+        "email": "lemaitrefreres@gmail.com"
+      },
+      "hexColor": {
+        "primary": ["FFE6AE","E23C00"],
+        "alternative": ["050514"]
+      }
     },
     {
       "id": 4,
-      "name": "Le Truskel",
+      "name": "dérailleur",
       "tags": [
         "rock",
         "live music",
@@ -164,10 +192,18 @@
           "facebook.com/lepetitchatnoir"
         ]
       },
-      "email": "contact@lepetitchatnoir.com"
-    },{
+      "contact":{
+        "phoneNumber": ["+33 6 67 24 10 99", "+33 6 58 89 01 00"],
+        "email": "lemaitrefreres@gmail.com"
+      },
+      "hexColor": {
+        "primary": ["ED5C32","FFFBD2"],
+        "alternative": []
+      }
+    },
+    {
       "id": 5,
-      "name": "The Library Bar",
+      "name": "REHAB",
       "tags": [
         "classique",
         "calme"
@@ -186,7 +222,44 @@
         "types": ["insta", "facebook"],
         "urls": ["instagram.com/thelibrarybar", "facebook.com/thelibrarybar"]
       },
-      "email": "contact@thelibrarybar.com"
+      "contact":{
+        "phoneNumber": ["+33 6 67 24 10 99", "+33 6 58 89 01 00"],
+        "email": "lemaitrefreres@gmail.com"
+      },
+      "hexColor": {
+        "primary": ["831919","FFE39C"],
+        "alternative": []
+      }
+    },
+    {
+      "id": 6,
+      "name": "La Fièvre",
+      "tags": [
+        "classique",
+        "calme"
+      ],
+      "detail": "The Library Bar est un bar calme et élégant avec une collection impressionnante de livres. Le bar propose une grande variété de boissons, y compris des cocktails classiques, du whisky, du rhum et du gin. C'est un endroit idéal pour prendre un verre après une journée de travail ou pour discuter avec des amis dans une atmosphère détendue.",
+      "address": {
+        "addressLine1": "21 Rue de l'Université",
+        "zip": 75007,
+        "city": "Paris"
+      },
+      "openDay": "Lundi - Dimanche",
+      "openTime": "16:00 - 23:00",
+      "transports": [2, 3],
+      "metroStationName": "Ménilmontant|Parmentier",
+      "links": {
+        "types": ["insta", "facebook"],
+        "urls": ["instagram.com/thelibrarybar", "facebook.com/thelibrarybar"]
+      },
+      "contact":{
+        "phoneNumber": ["+33 6 67 24 10 99", "+33 6 58 89 01 00"],
+        "email": "lemaitrefreres@gmail.com"
+      },
+      "hexColor": {
+        "primary": ["FF55EE","000000"],
+        "alternative": []
+      }
     }
   ]
 }
