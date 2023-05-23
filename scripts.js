@@ -214,11 +214,11 @@ function fillCards(templateId, jsonBars) {
     }
 
     // Add the preview card to the document
-    const preview = document.getElementById(bar.id.toString());
+    const preview = document.getElementById("bar_"+bar.id.toString());
     if (preview) {
       preview.appendChild(previewCard);
     }
   });
 }
 
-loadJsonAndFillCards("template");
+loadJsonAndFillCards("small-card");

@@ -10,155 +10,160 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/Flip.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/Draggable.min.js"></script>
   </head>
   <body>
-    <header>
-      <div class="jumbotron text-center">
-        <h1>What's up tonight ?</h1>
-        <p>petite description</p>
-      </div>
-    </header>
-    <main>
-      <div class="container pitch">
-        <div class="col">
-          <h3>à la rencontre des bars</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eos
-            rem suscipit <kbd>Ctrl + LOL </kbd>velit animi est tempore dolore
-            cumque aperiam quidem iste error temporibus, facere placeat
-            exercitationem aspernatur voluptatibus et ut. Lorem ipsum, dolor sit
-            amet consectetur adipisicing elit. Labore odit voluptas quibusdam
-            voluptate omnis repellat nostrum placeat quos doloremque dolorum
-            possimus quae ipsam eum, neque fugiat nisi temporibus qui nesciunt?
-          </p>
-        </div>
-      </div>
-      <section class="scroll-section">
-        <svg
-          id="svg"
-          data-name="Calque 2"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 85.66 1132.68"
-        >
-          <defs>
-            <style>
-              .cls-1 {
-                fill: none;
-                stroke: #000;
-                stroke-miterlimit: 10;
-                stroke-width: 10px;
-              }
-            </style>
-          </defs>
-          <path
-            class="cls-1"
-            id="line"
-            d="M11.64,1.56C78.02,157.98,85.88,254.33,80.12,314c-10.24,106.21-65.1,111.67-72.26,218.03C.06,647.82,60.48,709.56,63.74,854.59c2.46,109.49-29.01,206.16-60.08,276.47"
-          />
-        </svg>
-        <article class="element-container">
-          <div
-            class="scroll-element js-scroll slide-left thumbnail"
-            id="0"
-          ></div>
-          <div class="big-box">
-            <img
-              class="full-size"
-              data-flip-id="img2"
-              src="https://placehold.co/600x600"
-            />
+    <div data-scroll-container>
+      <section data-scroll-section>
+        <header>
+          <div class="jumbotron text-center">
+            <h1>What's up tonight ?</h1>
+            <p>petite description</p>
           </div>
-          <div class="placeholder"></div>
-        </article>
-        <article class="element-container">
-          <div
-            class="scroll-element js-scroll slide-right thumbnail"
-            id="1"
-          ></div>
-          <div class="big-box">
-            <img
-              class="full-size"
-              data-flip-id="img4"
-              src="https://placehold.co/600x600"
-            />
+        </header>
+        <main>
+          <div class="container pitch">
+            <div class="col">
+              <h3>à la rencontre des bars</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eos
+                rem suscipit <kbd>Ctrl + LOL </kbd>velit animi est tempore dolore
+                cumque aperiam quidem iste error temporibus, facere placeat
+                exercitationem aspernatur voluptatibus et ut. Lorem ipsum, dolor sit
+                amet consectetur adipisicing elit. Labore odit voluptas quibusdam
+                voluptate omnis repellat nostrum placeat quos doloremque dolorum
+                possimus quae ipsam eum, neque fugiat nisi temporibus qui nesciunt?
+              </p>
+            </div>
           </div>
-          <div class="placeholder"></div>
-        </article>
+          <section class="scroll-section">
+            <svg
+              id="svg"
+              data-name="Calque 2"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 85.66 1132.68"
+            >
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill: none;
+                    stroke: #000;
+                    stroke-miterlimit: 10;
+                    stroke-width: 10px;
+                  }
+                </style>
+              </defs>
+              <path
+                class="cls-1"
+                id="line"
+                d="M11.64,1.56C78.02,157.98,85.88,254.33,80.12,314c-10.24,106.21-65.1,111.67-72.26,218.03C.06,647.82,60.48,709.56,63.74,854.59c2.46,109.49-29.01,206.16-60.08,276.47"
+              />
+            </svg>
+            <article class="element-container">
+              <div
+                class="scroll-element js-scroll slide-left thumbnail"
+                id="bar_0"
+              ></div>
+              <div class="big-box">
+                <img
+                  class="full-size"
+                  data-flip-id="img2"
+                  src="https://placehold.co/600x600"
+                />
+              </div>
+              <div class="placeholder"></div>
+            </article>
+            <article class="element-container">
+              <div
+                class="scroll-element js-scroll slide-right thumbnail"
+                id="bar_1"
+              ></div>
+              <div class="big-box">
+                <img
+                  class="full-size"
+                  data-flip-id="img4"
+                  src="https://placehold.co/600x600"
+                />
+              </div>
+              <div class="placeholder"></div>
+            </article>
 
-        <article class="element-container">
-          <div
-            class="scroll-element js-scroll slide-left thumbnail"
-            id="2"
-          ></div>
-          <div class="big-box">
-            <img
-              class="full-size"
-              data-flip-id="img6"
-              src="https://placehold.co/600x600"
-            />
-          </div>
-          <div class="placeholder"></div>
-        </article>
-        <article class="element-container">
-          <div
-            class="scroll-element js-scroll slide-right thumbnail"
-            id="3"
-          ></div>
-          <div class="big-box">
-            <img
-              class="full-size"
-              data-flip-id="img8"
-              src="https://placehold.co/600x600"
-            />
-          </div>
-          <div class="placeholder"></div>
-        </article>
+            <article class="element-container">
+              <div
+                class="scroll-element js-scroll slide-left thumbnail"
+                id="bar_2"
+              ></div>
+              <div class="big-box">
+                <img
+                  class="full-size"
+                  data-flip-id="img6"
+                  src="https://placehold.co/600x600"
+                />
+              </div>
+              <div class="placeholder"></div>
+            </article>
+            <article class="element-container">
+              <div
+                class="scroll-element js-scroll slide-right thumbnail"
+                id="bar_3"
+              ></div>
+              <div class="big-box">
+                <img
+                  class="full-size"
+                  data-flip-id="img8"
+                  src="https://placehold.co/600x600"
+                />
+              </div>
+              <div class="placeholder"></div>
+            </article>
 
-        <article class="element-container">
-          <div
-            class="scroll-element js-scroll slide-left thumbnail"
-            id="4"
-          ></div>
-          <div class="big-box">
-            <img
-              class="full-size"
-              data-flip-id="img10"
-              src="https://placehold.co/600x600"
-            />
-          </div>
-          <div class="placeholder"></div>
-        </article>
-        <article class="element-container">
-          <div class="scroll-element js-scroll slide-right thumbnail"id="5"></div>
-          <div class="big-box">
-            <img
-              class="full-size"
-              data-flip-id="img12"
-              src="https://placehold.co/600x600"
-            />
-          </div>
-          <div class="placeholder"></div>
-        </article>
+            <article class="element-container">
+              <div
+                class="scroll-element js-scroll slide-left thumbnail"
+                id="bar_4"
+              ></div>
+              <div class="big-box">
+                <img
+                  class="full-size"
+                  data-flip-id="img10"
+                  src="https://placehold.co/600x600"
+                />
+              </div>
+              <div class="placeholder"></div>
+            </article>
+            <article class="element-container">
+              <div class="scroll-element js-scroll slide-right thumbnail"id="5"></div>
+              <div class="big-box">
+                <img
+                  class="full-size"
+                  data-flip-id="img12"
+                  src="https://placehold.co/600x600"
+                />
+              </div>
+              <div class="placeholder"></div>
+            </article>
+          </section>
+          <section class="throttle-container">
+            <span id="scroll-count">0</span>
+            <span id="throttle-count">0</span>
+          </section>
+        </main>
+        <footer>
+          <button id="go-up">allez, hop !</button>
+        </footer>
       </section>
-      <section class="throttle-container">
-        <span id="scroll-count">0</span>
-        <span id="throttle-count">0</span>
-      </section>
-    </main>
-    <footer>
-      <button id="go-up">allez, hop !</button>
-    </footer>
-
+    </div>
     <!-- elements fixes (poins de référence) sur la carte. -->
 
-    <!-- This document contains the templates used on index.php -->
+    <!-- This section contains the templates used on index.php -->
 
-    <template id="template">
+    <!-- small-card -->
+    <template id="small-card">
       <div class="card">
         <div class="card-content">
           <div class="columns">
@@ -189,32 +194,83 @@
         </div>
       </div>
     </template>
+
+    <!-- main-card -->
     <template id="main-card">
       <div class="container">
-        <!-- DEBUT HEADER -->
-        <div class="columns">
-          <div class="column">
-            <!-- INFO -->
-          </div>
-          <div class="column">
-            <!-- PHOTO ET PLUS D'INFO -->
-          </div>
+        <!-- FIRST ROW -->
+        <div class="content">
+          <p class="title">Nom de la playlist</p>
+          <span class="icon">x</span>
         </div>
         <div class="columns">
+          <!-- MAIN GENRES -->
           <div class="column">
-            <!-- RADARS -->
+            <div class="column">
+              <p class="subtitle">Main Genres</p>
+              <div class="container donuts">
+                x
+              </div>
+            </div>
+            <div class="column">
+            </div>
+              <p class="subtitle">Top sub-genres</p>
+              <ol>
+                <le>Alternative Metal <span>5</span>%</le>
+                <le>Alternative Metal <span>5</span>%</le>
+              </ol>
+            </div>
           </div>
+          <!-- TOP ARTISTS -->
           <div class="column">
-            <!-- ??? -->
+            <p class="subtitle">Top Artists</p>
+            <div class="container artists-avatar">
+              x
+            </div>
+          </div>
+          <!-- DIVERSITY SCORE -->
+          <div class="column">
+            <p class="subtitle">Top Artists</p>
+            <div class="container diversity-graph"></div>
           </div>
         </div>
-        <!-- FIN HEADER -->
-        <!-- DEBUT BODY -->
-        <!-- FIN BODY -->
-        <!-- DEBUT FOOTER -->
-        <!-- FIN FOOTER -->
+        <!-- SECOND ROW -->
+        <div class="columns">
+          <!-- MOSR REPEATS -->
+          <div class="column">
+            <p class="subtitle">Artist with the most repeats</p>
+            <ol>
+              <le>Ho99o9 <span>5</span></le>
+              <le>Limp Bizkit <span>1</span></le>
+            </ol>
+          </div>
+          <div class="column">
+            <p class="subtitle">Artist with the most proximity</p>
+            <p class="subtitle">Artist with the least proximity</p>
+            <p class="subtitle">The Most isolated artist</p>
+          </div>
+        </div>
+        <!-- THIRD ROW -->
+        <div class="columns">
+          <div class="column">
+            <!-- RADAR -->
+            <div class="container">
+              RADAR
+            </div>
+          </div>
+        </div> 
+        <!-- TABLE ROWS -->
+        <div class="table">
+          <p class="subtitle">Most popular tracks worldwide</p>
+          TABLE
+        </div>
+        <div class="table">
+          <p class="subtitle">Most popular tracks worldwide</p>
+          TABLE
+        </div>
       </div>
     </template>
-    <script src="js/scripts.js"></script>
+    <script src="index.js"></script>
+    <script src="scripts.js"></script>
   </body>
 </html>
