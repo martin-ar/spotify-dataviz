@@ -41,13 +41,15 @@
               </p>
             </div>
           </div>
-          <section class="scroll-section">
-            <svg
-              id="svg"
-              data-name="Calque 2"
-              xmlns="http://www.w3.org/2000/svg"
+        </section>
+        <!-- <section class="scroll-section"> -->
+        <section data-scroll-section>
+          <svg
+          id="svg"
+          data-name="Calque 2"
+          xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 85.66 1132.68"
-            >
+              >
               <defs>
                 <style>
                   .cls-1 {
@@ -59,19 +61,20 @@
                 </style>
               </defs>
               <path
-                class="cls-1"
-                id="line"
-                d="M11.64,1.56C78.02,157.98,85.88,254.33,80.12,314c-10.24,106.21-65.1,111.67-72.26,218.03C.06,647.82,60.48,709.56,63.74,854.59c2.46,109.49-29.01,206.16-60.08,276.47"
+              class="cls-1"
+              id="line"
+              d="M11.64,1.56C78.02,157.98,85.88,254.33,80.12,314c-10.24,106.21-65.1,111.67-72.26,218.03C.06,647.82,60.48,709.56,63.74,854.59c2.46,109.49-29.01,206.16-60.08,276.47"
               />
             </svg>
-            <article class="element-container">
+            <article element-container>
+            <!-- <article class="element-container"> -->
               <div
-                class="scroll-element js-scroll slide-left thumbnail"
-                id="bar_0"
+              class="scroll-element js-scroll slide-left thumbnail"
+              id="bar_0"
               ></div>
               <div class="big-box">
                 <img
-                  class="full-size"
+                class="full-size"
                   data-flip-id="img2"
                   src="https://placehold.co/600x600"
                 />
@@ -80,58 +83,58 @@
             </article>
             <article class="element-container">
               <div
-                class="scroll-element js-scroll slide-right thumbnail"
-                id="bar_1"
+              class="scroll-element js-scroll slide-right thumbnail"
+              id="bar_1"
               ></div>
               <div class="big-box">
                 <img
-                  class="full-size"
-                  data-flip-id="img4"
-                  src="https://placehold.co/600x600"
+                class="full-size"
+                data-flip-id="img4"
+                src="https://placehold.co/600x600"
                 />
               </div>
               <div class="placeholder"></div>
             </article>
-
+            
             <article class="element-container">
               <div
-                class="scroll-element js-scroll slide-left thumbnail"
-                id="bar_2"
+              class="scroll-element js-scroll slide-left thumbnail"
+              id="bar_2"
               ></div>
               <div class="big-box">
                 <img
-                  class="full-size"
-                  data-flip-id="img6"
-                  src="https://placehold.co/600x600"
+                class="full-size"
+                data-flip-id="img6"
+                src="https://placehold.co/600x600"
                 />
               </div>
               <div class="placeholder"></div>
             </article>
             <article class="element-container">
               <div
-                class="scroll-element js-scroll slide-right thumbnail"
-                id="bar_3"
+              class="scroll-element js-scroll slide-right thumbnail"
+              id="bar_3"
               ></div>
               <div class="big-box">
                 <img
                   class="full-size"
                   data-flip-id="img8"
                   src="https://placehold.co/600x600"
-                />
-              </div>
-              <div class="placeholder"></div>
-            </article>
-
-            <article class="element-container">
-              <div
+                  />
+                </div>
+                <div class="placeholder"></div>
+              </article>
+              
+              <article class="element-container">
+                <div
                 class="scroll-element js-scroll slide-left thumbnail"
                 id="bar_4"
-              ></div>
-              <div class="big-box">
+                ></div>
+                <div class="big-box">
                 <img
-                  class="full-size"
-                  data-flip-id="img10"
-                  src="https://placehold.co/600x600"
+                class="full-size"
+                data-flip-id="img10"
+                src="https://placehold.co/600x600"
                 />
               </div>
               <div class="placeholder"></div>
@@ -140,14 +143,14 @@
               <div class="scroll-element js-scroll slide-right thumbnail"id="5"></div>
               <div class="big-box">
                 <img
-                  class="full-size"
-                  data-flip-id="img12"
-                  src="https://placehold.co/600x600"
+                class="full-size"
+                data-flip-id="img12"
+                src="https://placehold.co/600x600"
                 />
               </div>
               <div class="placeholder"></div>
             </article>
-          </section>
+          <!-- </section> -->
           <section class="throttle-container">
             <span id="scroll-count">0</span>
             <span id="throttle-count">0</span>
@@ -156,12 +159,11 @@
         <footer>
           <button id="go-up">allez, hop !</button>
         </footer>
-      </section>
-    </div>
+      </div>
     <!-- elements fixes (poins de référence) sur la carte. -->
 
     <!-- This section contains the templates used on index.php -->
-
+    
     <!-- small-card -->
     <template id="small-card">
       <div class="card">
@@ -270,7 +272,16 @@
         </div>
       </div>
     </template>
-    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <script>
+      (function () {
+        var scroll = new LocomotiveScroll({
+          el: document.querySelector('[data-scroll-container]'),
+          smooth: true
+        });
+      })();
+    </script>
+    <!-- <script src="index.js"></script> -->
     <script src="scripts.js"></script>
   </body>
 </html>
