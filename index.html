@@ -10,7 +10,6 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="css/base.css"/>
     <link rel="stylesheet" href="css/styles.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
@@ -18,8 +17,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/Draggable.min.js"></script>
   </head>
   <body>
-    <div data-scroll-container>
-      <section data-scroll-section>
         <header>
           <div class="jumbotron text-center">
             <h1>What's up tonight ?</h1>
@@ -136,8 +133,26 @@
               </div>
               <div class="placeholder"></div>
             </article>
+
             <article class="element-container">
-              <div class="scroll-element js-scroll slide-right thumbnail"id="5"></div>
+              <div 
+                class="scroll-element js-scroll slide-right thumbnail"
+                id="bar_5">
+              </div>
+              <div class="big-box">
+                <img
+                  class="full-size"
+                  data-flip-id="img12"
+                  src="https://placehold.co/600x600"
+                />
+              </div>
+              <div class="placeholder"></div>
+            </article>
+            <article class="element-container">
+              <div 
+                class="scroll-element js-scroll slide-right thumbnail"
+                id="bar_6">
+              </div>
               <div class="big-box">
                 <img
                   class="full-size"
@@ -156,8 +171,7 @@
         <footer>
           <button id="go-up">allez, hop !</button>
         </footer>
-      </section>
-    </div>
+
     <!-- elements fixes (poins de référence) sur la carte. -->
 
     <!-- This section contains the templates used on index.php -->
@@ -270,7 +284,6 @@
         </div>
       </div>
     </template>
-    <script src="index.js"></script>
     <script src="scripts.js"></script>
   </body>
 </html>
