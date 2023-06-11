@@ -6,10 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dataviz spotify</title>
 
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-    />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/styles.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
@@ -61,31 +58,20 @@
                 d="M11.64,1.56C78.02,157.98,85.88,254.33,80.12,314c-10.24,106.21-65.1,111.67-72.26,218.03C.06,647.82,60.48,709.56,63.74,854.59c2.46,109.49-29.01,206.16-60.08,276.47"
               />
             </svg>
-            <article class="element-container">
-              <div
-                class="scroll-element js-scroll slide-left thumbnail"
-                id="bar_0"
-              ></div>
-              <div class="big-box">
-                <img
-                  class="full-size"
-                  data-flip-id="img2"
-                  src="https://placehold.co/600x600"
-                />
+            <article class="element-container"> 
+              <div class="scroll-element js-scroll slide-left thumbnail" id="bar_0"></div>
+              <div class="box full-size">
+                <span class="glyphicon glyphicon-remove-circle close-full-size" onClick="closeFullSize();" aria-label="Close"></span>
+                <img class="full-size-img" data-flip-id="img0" src="assets/img/p-atomic-cat-1.png"/>
               </div>
               <div class="placeholder"></div>
             </article>
+
             <article class="element-container">
-              <div
-                class="scroll-element js-scroll slide-right thumbnail"
-                id="bar_1"
-              ></div>
-              <div class="big-box">
-                <img
-                  class="full-size"
-                  data-flip-id="img4"
-                  src="https://placehold.co/600x600"
-                />
+              <div class="scroll-element js-scroll slide-right thumbnail" id="bar_1"></div>
+              <div class="box full-size">
+                <span class="glyphicon glyphicon-remove-circle close-full-size" onClick="closeFullSize();" aria-label="Close"></span>
+                <img class="full-size-img" data-flip-id="img0" src="assets/img/p-atomic-cat-2.png"/>
               </div>
               <div class="placeholder"></div>
             </article>
@@ -176,7 +162,7 @@
 
     <!-- This section contains the templates used on index.php -->
 
-    <!-- small-card -->
+    <!-- small-template -->
     <template id="small-card">
       <div class="card">
         <div class="card-content">
@@ -209,78 +195,84 @@
       </div>
     </template>
 
-    <!-- main-card -->
+    <!-- main-template -->
     <template id="main-card">
-      <div class="container">
-        <!-- FIRST ROW -->
-        <div class="content">
-          <p class="title">Nom de la playlist</p>
-          <span class="icon">x</span>
+     <!-- main-card -->
+      <div class="card" style="max-width: 50vw">
+        <div class="modal-header">
+          <!-- FIRST ROW -->
+          <p class="modal-title">Nom de la playlist</p>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
         </div>
-        <div class="columns">
-          <!-- MAIN GENRES -->
-          <div class="column">
-            <div class="column">
-              <p class="subtitle">Main Genres</p>
-              <div class="container donuts">
-                x
+        <div class="modal-body">
+          <div class="columns">
+            <!-- MAIN GENRES -->
+            <div class="column is-4">
+              <div class="columns">
+                <div class="column is-6">
+                  <p class="subtitle">Main Genres</p>
+                  <div class="container donuts">x</div>
+                </div>
+                <div class="column is-6">
+                  <p class="subtitle">Top sub-genres</p>
+                  <ol>
+                    <le>Alternative Metal <span>5</span>%</le>
+                    <le>Alternative Metal <span>5</span>%</le>
+                  </ol>
+                </div>
               </div>
             </div>
-            <div class="column">
+            <!-- TOP ARTISTS -->
+            <div class="column is-4">
+              <p class="subtitle">Top Artists</p>
+              <div class="container artists-avatar">x</div>
             </div>
-              <p class="subtitle">Top sub-genres</p>
+            <!-- DIVERSITY SCORE -->
+            <div class="column is-4">
+              <p class="subtitle">Playlist diversity score</p>
+              <div class="container diversity-graph"></div>
+            </div>
+          </div>
+          <!-- SECOND ROW -->
+          <div class="columns">
+            <!-- MOSR REPEATS -->
+            <div class="column">
+              <p class="subtitle">Artist with the most repeats</p>
               <ol>
-                <le>Alternative Metal <span>5</span>%</le>
-                <le>Alternative Metal <span>5</span>%</le>
+                <le>Ho99o9 <span>5</span></le>
+                <le>Limp Bizkit <span>1</span></le>
               </ol>
             </div>
-          </div>
-          <!-- TOP ARTISTS -->
-          <div class="column">
-            <p class="subtitle">Top Artists</p>
-            <div class="container artists-avatar">
-              x
+            <div class="column">
+              <p class="subtitle">Artist with the most proximity</p>
+              <p class="subtitle">Artist with the least proximity</p>
+              <p class="subtitle">The Most isolated artist</p>
             </div>
           </div>
-          <!-- DIVERSITY SCORE -->
-          <div class="column">
-            <p class="subtitle">Top Artists</p>
-            <div class="container diversity-graph"></div>
-          </div>
-        </div>
-        <!-- SECOND ROW -->
-        <div class="columns">
-          <!-- MOSR REPEATS -->
-          <div class="column">
-            <p class="subtitle">Artist with the most repeats</p>
-            <ol>
-              <le>Ho99o9 <span>5</span></le>
-              <le>Limp Bizkit <span>1</span></le>
-            </ol>
-          </div>
-          <div class="column">
-            <p class="subtitle">Artist with the most proximity</p>
-            <p class="subtitle">Artist with the least proximity</p>
-            <p class="subtitle">The Most isolated artist</p>
-          </div>
-        </div>
-        <!-- THIRD ROW -->
-        <div class="columns">
-          <div class="column">
-            <!-- RADAR -->
-            <div class="container">
-              RADAR
+          <!-- THIRD ROW -->
+          <div class="columns">
+            <div class="column">
+              <!-- RADAR -->
+              <div class="container">RADAR</div>
             </div>
           </div>
-        </div> 
-        <!-- TABLE ROWS -->
-        <div class="table">
-          <p class="subtitle">Most popular tracks worldwide</p>
-          TABLE
+          <!-- TABLE ROWS -->
+          <div class="table">
+            <p class="subtitle">Most popular tracks worldwide</p>
+            TABLE
+          </div>
+          <div class="table">
+            <p class="subtitle">Most popular tracks worldwide</p>
+            TABLE
+          </div>
         </div>
-        <div class="table">
-          <p class="subtitle">Most popular tracks worldwide</p>
-          TABLE
+        <div class="modal-footer">
+          <div class="player-container">PLAYER</div>
         </div>
       </div>
     </template>

@@ -50,10 +50,12 @@ const elementOutofView = (el) => {
 
 const displayScrollElement = (element) => {
   element.classList.add("scrolled");
+  element.scrollTop = 0 ;
 };
 
 const hideScrollElement = (element) => {
   element.classList.remove("scrolled");
+  element.scrollTop = 0 ;
 };
 
 const handleScrollAnimation = () => {
@@ -78,7 +80,7 @@ window.addEventListener("scroll", () => {
 });
 
 // bouton pour remonter la page
-let mybutton = document.getElementById("go-up");
+let goUp = document.getElementById("go-up");
 
 // When the user scrolls down ()px from the top of the document, show the button
 window.onscroll = function () {
@@ -90,48 +92,57 @@ function scrollFunction() {
     document.body.scrollTop > 2700 ||
     document.documentElement.scrollTop > 2700
   ) {
-    mybutton.style.display = "block";
+    goUp.style.display = "block";
   } else {
-    mybutton.style.display = "none";
+    goUp.style.display = "none";
   }
 }
-mybutton.addEventListener("click", topFunction);
+goUp.addEventListener("click", topFunction);
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
   document.body.scrollTo({ top: 0, behavior: "smooth" }); // For Safari
   document.documentElement.scrollTo({ top: 0, behavior: "smooth" }); // For Chrome, Firefox, IE and Opera
 }
 
-// document.getElementById("1").onclick = function () {
-//   var barDiv = document.createElement('div');
-//   barDiv.className = "barDiv";
-//   document.getElementById('1').appendChild(barDiv);
-// }
-
 //greensock
 gsap.registerPlugin(Flip, Draggable);
 
-const fullSize = document.querySelector(".full-size"),
+var fullSize = document.querySelector(".full-size"),
   thumbnail = document.querySelector(".thumbnail"),
   article = document.querySelector(".scroll-section");
 
-Draggable.create(thumbnail);
 Draggable.create(fullSize);
 
-article.addEventListener("click", () => {
+thumbnail.addEventListener("click", () => {
   const state = Flip.getState(".thumbnail, .full-size");
   fullSize.classList.toggle("active");
   thumbnail.classList.toggle("active");
-
-  Flip.from(state, {
-    duration: 0.1,
-    fade: true,
-    absolute: true,
-    toggleClass: "flipping",
-    ease: "power1.inOut",
-  });
-  // renderModules();
+  window.addEventListener("mousedown", closeFullSize);
+  
+  // Flip.from(state, {
+  //   duration: 0.1,
+  //   fade: true,
+  //   absolute: true,
+  //   toggleClass: "flipping",
+  //   ease: "power1.inOut",
+  // });
 });
+
+function closeFullSize(){
+  fullSize.scrollTop = 0;
+  thumbnail.scrollTop = 0;
+  const state = Flip.getState(".thumbnail, .full-size");
+  fullSize.classList.toggle("active");
+  thumbnail.classList.toggle("active");
+  window.removeEventListener("mousedown", closeFullSize);
+  // Flip.from(state, {
+  //   duration: 0.1,
+  //   fade: true,
+  //   absolute: true,
+  //   toggleClass: "flipping",
+  //   ease: "power1.inOut",
+  // });
+};
 
 var line = document.getElementById("line");
 var length = line.getTotalLength();
@@ -158,6 +169,7 @@ function myFunction() {
 }
 
 var json = null;
+loadJsonAndFillCards("small-card");
 
 async function loadJsonAndFillCards(_id) {
   if (json == null) {
@@ -220,5 +232,3 @@ function fillCards(templateId, jsonBars) {
     }
   });
 }
-
-loadJsonAndFillCards("small-card");
