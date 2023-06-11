@@ -50,12 +50,12 @@ const elementOutofView = (el) => {
 
 const displayScrollElement = (element) => {
   element.classList.add("scrolled");
-  element.scrollTop = 0 ;
+  element.scrollTop = 0;
 };
 
 const hideScrollElement = (element) => {
   element.classList.remove("scrolled");
-  element.scrollTop = 0 ;
+  element.scrollTop = 0;
 };
 
 const handleScrollAnimation = () => {
@@ -104,46 +104,6 @@ function topFunction() {
   document.documentElement.scrollTo({ top: 0, behavior: "smooth" }); // For Chrome, Firefox, IE and Opera
 }
 
-//greensock
-gsap.registerPlugin(Flip, Draggable);
-
-var fullSize = document.querySelector(".full-size"),
-  thumbnail = document.querySelector(".thumbnail"),
-  article = document.querySelector(".scroll-section");
-
-Draggable.create(fullSize);
-
-thumbnail.addEventListener("click", () => {
-  const state = Flip.getState(".thumbnail, .full-size");
-  fullSize.classList.toggle("active");
-  thumbnail.classList.toggle("active");
-  window.addEventListener("mousedown", closeFullSize);
-  
-  // Flip.from(state, {
-  //   duration: 0.1,
-  //   fade: true,
-  //   absolute: true,
-  //   toggleClass: "flipping",
-  //   ease: "power1.inOut",
-  // });
-});
-
-function closeFullSize(){
-  fullSize.scrollTop = 0;
-  thumbnail.scrollTop = 0;
-  const state = Flip.getState(".thumbnail, .full-size");
-  fullSize.classList.toggle("active");
-  thumbnail.classList.toggle("active");
-  window.removeEventListener("mousedown", closeFullSize);
-  // Flip.from(state, {
-  //   duration: 0.1,
-  //   fade: true,
-  //   absolute: true,
-  //   toggleClass: "flipping",
-  //   ease: "power1.inOut",
-  // });
-};
-
 var line = document.getElementById("line");
 var length = line.getTotalLength();
 
@@ -154,9 +114,9 @@ line.style.strokeDasharray = length;
 line.style.strokeDashoffset = length;
 
 // Find scroll percentage on scroll (using cross-browser properties), and offset dash same amount as percentage scrolled
-window.addEventListener("scroll", myFunction);
+window.addEventListener("scroll", showGoUp);
 
-function myFunction() {
+function showGoUp() {
   var scrollpercent =
     (document.body.scrollTop + document.documentElement.scrollTop) /
     (document.documentElement.scrollHeight -
@@ -203,6 +163,11 @@ function fillCards(templateId, jsonBars) {
       tags.innerHTML = bar.tags
         .map((tag) => `<span class="tag">${tag}</span>`)
         .join("");
+      const knowMoreButton = document.createElement("button");
+      knowMoreButton.innerHTML =
+        `<span class="nobr open-full-size" id="open-bar-${bar.id}">En savoir plus sur les playlists...</span>`;
+      knowMoreButton.classList.add("open-full-size");
+      tags.appendChild(knowMoreButton);
     }
 
     const description = previewCard.querySelector(".description");
@@ -222,13 +187,65 @@ function fillCards(templateId, jsonBars) {
 
     const transports = previewCard.querySelector(".container:nth-child(3)");
     if (transports) {
-      transports.innerHTML = `<div class='directions'<p>${bar.transports.join(" ")}</p></br><p><span class='nobr'>${bar.metroStationName}</p></span></div>`;
+      transports.innerHTML = `<div class='directions'<p>${bar.transports.join(
+        " "
+      )}</p></br><p><span class='nobr'>${
+        bar.metroStationName
+      }</p></span></div>`;
     }
 
     // Add the preview card to the document
-    const preview = document.getElementById("bar_"+bar.id.toString());
+    const preview = document.getElementById("bar_" + bar.id.toString());
     if (preview) {
       preview.appendChild(previewCard);
     }
   });
+}
+
+//greensock
+gsap.registerPlugin(Flip, Draggable);
+
+const scrollSection = document.querySelector(".scroll-section");
+
+scrollSection.addEventListener("click", (event) => {
+  var clickedElement = event.target;
+
+  if (clickedElement.classList.contains("open-full-size")) {
+    const container = clickedElement.closest(".element-container");
+    const fullSize = container.querySelector(".full-size");
+    const thumbnail = container.querySelector(".thumbnail");
+    const closeButton = container.querySelector(".close-full-size");
+
+    thumbnail.classList.toggle("active");
+    fullSize.classList.toggle("active");
+
+    Draggable.create(fullSize);
+    Draggable.create(clickedElement);
+
+    clickedElement.fullSize = fullSize;
+    clickedElement.thumbnail = thumbnail;
+    clickedElement.close = closeButton;
+
+    clickedElement.scrollTop = 0;
+    window.addEventListener("mousedown", closeFullSizeHandler);
+    closeButton.addEventListener("click", closeFullSizeHandler);
+  }
+  function closeFullSizeHandler() {
+    const fullSize = clickedElement.fullSize;
+    const thumbnail = clickedElement.thumbnail;
+    const closeButton = clickedElement.close;
+  
+    closeFullSize(fullSize, thumbnail);
+    window.removeEventListener("mousedown", closeFullSizeHandler);
+    closeButton.removeEventListener("click", closeFullSizeHandler);
+  }
+});
+
+
+function closeFullSize(fullSize, thumbnail) {
+
+  fullSize.scrollTop = 0;
+  thumbnail.scrollTop = 0;
+  fullSize.classList.toggle("active");
+  thumbnail.classList.toggle("active");
 }

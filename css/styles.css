@@ -52,17 +52,18 @@ body.hover-color1 {
 }
 
 .full-size {
-  display: none;
-  opacity: 0;
+  position: absolute;
+  height: 75vh;
+  outline: 14px solid rgba(248,255,4,0.14);
+  outline-offset: 0px;
   visibility: hidden;
 }
 .full-size.active {
+  z-index: 1000;
+  visibility: visible;
+  animation: fade-in 500ms ease-in-out both;
   display: flex;
   flex-direction: row-reverse;
-  z-index: 1000;
-  opacity: 1;
-  visibility: visible;
-  transition: opacity 1s ease, visibility 1s ease;
   border: 1px solid rgba(255,255,255,0.3);
   position: fixed;
   transform: translateX(-50%); /* Adjust the element's position based on its own width */
@@ -81,14 +82,19 @@ body.hover-color1 {
   overflow: hidden;
 }
 .full-size-img {
-width: fit-content;
-height: max-content;
+  width: 100%;
+  height: max-content;
 }
-.close-full-size{
-  cursor: pointer;
+.close-full-size-wrapper{
   position: absolute;
   top: 0.5rem;
   right: 0.5rem;
+}
+
+.close-full-size{
+  color:black;
+  cursor: pointer;
+  position: sticky;
 }
 
 .scroll-element p{
@@ -127,6 +133,15 @@ height: max-content;
   transition: width, height, color, 1200ms;
   overflow-y:scroll;
 }
+.open-full-size {
+  opacity: 0;
+  transition: opacity, 500ms;
+}
+.scroll-element:hover  .open-full-size {
+  opacity: 1;
+  transition: opacity 1s 700ms;
+}
+
 #template .description p {
   text-align: justify;
   text-overflow: clip;
@@ -259,5 +274,14 @@ height: max-content;
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
