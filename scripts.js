@@ -151,11 +151,16 @@ function fillCards(templateId, jsonBars) {
   jsonBars.forEach((bar) => {
     // Clone the template content
     const previewCard = template.content.cloneNode(true);
+    //Set card bg color
+    const card = previewCard.querySelector('.card');
+    card.style.backgroundColor = `#${bar.hexColor.primary[1]}`;
+
     // Get the card content elements
     const title = previewCard.querySelector(".title");
 
     if (title) {
       title.textContent = bar.name;
+      title.style.color = `#${bar.hexColor.primary[0]}`;
     }
 
     const tags = previewCard.querySelector(".tags");
@@ -174,6 +179,12 @@ function fillCards(templateId, jsonBars) {
     if (description) {
       description.innerHTML = bar.detail;
     }
+    const aside = previewCard.querySelector('.info');
+    console.log(aside);
+    const asideColor = bar.name === 'Atomic Cat' ? `#${bar.hexColor.alternative[1]}` : `#${bar.hexColor.primary[0]}`;
+
+    aside.style.backgroundColor = asideColor;
+    aside.style.color = '#FFFFFF';
 
     const address = previewCard.querySelector(".container:nth-child(1)");
     if (address) {
