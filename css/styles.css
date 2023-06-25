@@ -8,6 +8,9 @@ body {
   margin: 0;
   padding: 0px;
 }
+.title {
+  font-size: 2.5rem !important;
+}
 
 .container {
   width: 100%;
@@ -24,8 +27,10 @@ body {
   align-items: center;
 }
 .info{
-  display: flex ;
-  flex-direction: column ;
+  display: flex;
+  flex-direction: column;
+  min-width: auto;
+  justify-content: center;
 }
 .card-content {
   padding: 0.8rem;
@@ -105,8 +110,17 @@ body.hover-color1 {
   transition: opacity 0.5s ease;
 }
 .scroll-element:hover p{
+  margin: 0.5rem;
   opacity: 1;
   transition: opacity 2.5s ease;
+}
+
+.tags-wrapper .tag {
+  border-radius: 0 !important;
+  background-color: transparent !important;
+  border: 3px solid !important;
+  font-size: 1rem;
+  margin: 0.5rem 0.5rem;
 }
 
 .element-container {
@@ -129,14 +143,16 @@ body.hover-color1 {
   
 }
 .scroll-element:hover{
-  width: 80vh;
+  width: 100vh;
   height: 45vh;
   transition: width, height, 2000ms;
   overflow-y:scroll;
 }
 .open-full-size {
+  margin: 0.5rem;
   opacity: 0;
   transition: opacity, 500ms;
+
 }
 .scroll-element:hover  .open-full-size {
   opacity: 1;

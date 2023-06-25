@@ -163,15 +163,15 @@ function fillCards(templateId, jsonBars) {
       title.style.color = `#${bar.hexColor.primary[0]}`;
     }
 
-    const tags = previewCard.querySelector(".tags");
+    const tags = previewCard.querySelector(".tags-wrapper");
     if (tags) {
       tags.innerHTML = bar.tags
-        .map((tag) => `<span class="tag">${tag}</span>`)
+        .map((tag) => `<span class="tag" style="color:#${bar.hexColor.primary[0]} !important;border-color:#${bar.hexColor.primary[0]} !important;" >${tag}</span>`)
         .join("");
-      const knowMoreButton = document.createElement("button");
+      const knowMoreButton = document.createElement("div");
       knowMoreButton.innerHTML =
-        `<span class="nobr open-full-size" id="open-bar-${bar.id}">En savoir plus sur les playlists...</span>`;
-      knowMoreButton.classList.add("open-full-size");
+        `<span class="button is-primary nobr open-full-size" id="open-bar-${bar.id}" style="background-color:#${bar.hexColor.primary[0]} !important;color:#${bar.hexColor.primary[1]} !important;">En savoir plus sur les playlists...</span>`;
+      // knowMoreButton.classList.add("open-full-size");
       tags.appendChild(knowMoreButton);
     }
 
@@ -180,7 +180,6 @@ function fillCards(templateId, jsonBars) {
       description.innerHTML = bar.detail;
     }
     const aside = previewCard.querySelector('.info');
-    console.log(aside);
     const asideColor = bar.name === 'Atomic Cat' ? `#${bar.hexColor.alternative[1]}` : `#${bar.hexColor.primary[0]}`;
 
     aside.style.backgroundColor = asideColor;
@@ -188,7 +187,7 @@ function fillCards(templateId, jsonBars) {
 
     const address = previewCard.querySelector(".container:nth-child(1)");
     if (address) {
-      address.innerHTML = `<p><span class='nobr'>${bar.address.addressLine1}</span></p><p>${bar.address.zip} ${bar.address.city}</p>`;
+      address.innerHTML = `<p><span class='nobr'>${bar.address.addressLine1}</span><br>${bar.address.zip} ${bar.address.city}</p>`;
     }
 
     const openHours = previewCard.querySelector(".container:nth-child(2)");

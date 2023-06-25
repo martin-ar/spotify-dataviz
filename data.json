@@ -45,11 +45,11 @@
       "id": 1,
       "name": "La Soif",
       "tags": [
-        "jazz",
-        "blues",
-        "live music"
+        "after-work",
+        "calme",
+        "simplicité"
       ],
-      "detail": "Another Bar is a cozy spot in the heart of the city, with live jazz and blues performances every night. Sip on a classic cocktail and enjoy the ambiance of this local gem.",
+      "detail": "Un bar de quartier, simple, chaleureux et lumineux, La Soif vous offre un cadre idéal pour vos soirées réservées ou improvisées ! Entre amis, en afterwork ou anniversaire, là-bas vous pourrez profiter d’un espace intimiste à l’ambiance très vite animée et dansante. De plus, les propriétaires seront très fiers de vous servir sur leur magnifique comptoir boisé.",
       "address": {
         "addressLine1": "123 Main St",
         "zip": 12345,
@@ -86,11 +86,11 @@
       "id": 2,
       "name": "L'Estaminet",
       "tags": [
-        "jazz",
+        "populaire",
         "cosy",
-        "bar à vin"
+        "fermé"
       ],
-      "detail": "Le Chat Noir est un bar cosy au coeur du quartier latin. On y vient pour écouter du jazz en live ou tout simplement pour siroter un verre de vin dans une ambiance conviviale et chaleureuse. La carte propose une belle sélection de vins naturels et bio ainsi que des planches de fromage et de charcuterie. Un endroit parfait pour une soirée entre amis ou en amoureux.",
+      "detail": "L’Estaminet était anciennement un bar et restaurant à un coin de rue. Il proposait autant de plats de brasserie que de boissons rafraîchissantes. De ce qu’on peut observer, ils avaient l’habitude de faire des soirées à thématique pour réunir leur client, l’ambiance y semblait chaleureuse et accessible.",
       "address": {
         "addressLine1": "76 Rue Jean-Pierre Timbaud",
         "zip": 75011,
@@ -125,11 +125,11 @@
       "id": 3,
       "name": "Le Popul' Air",
       "tags": [
-        "terrasse",
-        "cocktails",
-        "bistrot"
+        "Café-théâtre",
+        "humour",
+        "familial"
       ],
-      "detail": "La Belle Équipe est un bistrot avec une belle terrasse ensoleillée. La carte des cocktails est impressionnante et les plats sont élaborés à partir de produits frais et de saison. L'ambiance est décontractée et chaleureuse, un vrai lieu de vie du quartier. De nombreuses soirées à thème sont organisées tout au long de l'année.",
+      "detail": "La dernière halte s’est faite au Café de Paris. En arrivant dans ce dernier bar de la rue, nous avons rencontré une barmaid très vivante et extravertie qui nous a appris qu’elle crée et concevait de nombreuses playlists, que ce soit pour ses amis, ou pour des bars qu’elle côtoie et connaît. De ce fait, nous avons découvert Le Popul'Air, qui n’est qu’autre qu’un théâtre et café.",
       "address": {
         "addressLine1": "92 Rue de Ménilmontant",
         "zip": 75020,
@@ -164,11 +164,11 @@
       "id": 4,
       "name": "dérailleur",
       "tags": [
-        "rock",
-        "live music",
-        "clubbing"
+        "chill",
+        "ouvert",
+        "passionné"
       ],
-      "detail": "Le Truskel est un bar rock emblématique de Paris. On y vient pour écouter des groupes de rock en live ou tout simplement pour danser sur les classiques du genre. La carte propose des bières artisanales et des cocktails originaux. L'ambiance est survoltée et conviviale, un vrai lieu de rencontre pour les amoureux de la musique.",
+      "detail": "Les frères sont de grands férus de vélo, c’est ce qui les rassemble et a fait naître ce bar à la décoration raffinée, sobre mais très personnalisée en référence à cette passion commune. Ils sont par ailleurs très fiers d’être des “finishers” du Paris Roubaix, une étape majeure du Tour de France 2022. Amateurs de vélo, au Dérailleur vous êtes certains de ne pas faire fausse route : vous y trouverez des compères de compétition qui sauront vous aiguiller et vous conseiller.",
       "address": {
         "addressLine1": "12 Rue Feydeau",
         "zip": 75002,
@@ -208,7 +208,7 @@
         "classique",
         "calme"
       ],
-      "detail": "The Library Bar est un bar calme et élégant avec une collection impressionnante de livres. Le bar propose une grande variété de boissons, y compris des cocktails classiques, du whisky, du rhum et du gin. C'est un endroit idéal pour prendre un verre après une journée de travail ou pour discuter avec des amis dans une atmosphère détendue.",
+      "detail": "Alors que le Normandy est en travaux, au sous-sol se cache un endroit curieux et intimiste, à l’ambiance des années 1920. Rehab est en fait un speakeasy accessible depuis une entrée secrète dans l’hôtel - derrière un miroir mais chuuut - et vous propose de découvrir une carte très spéciale, riche en surprises… Les mixologues auront de nombreuses potions à vous concocter : infusion au CBD, cocktails atypiques, tout est possible au Rehab. De plus, les lieux vous renverront près d’un siècle auparavant, de quoi perdre la notion du temps.",
       "address": {
         "addressLine1": "21 Rue de l'Université",
         "zip": 75007,
