@@ -89,8 +89,8 @@ window.onscroll = function () {
 
 function scrollFunction() {
   if (
-    document.body.scrollTop > 2700 ||
-    document.documentElement.scrollTop > 2700
+    document.body.scrollTop > 2400 ||
+    document.documentElement.scrollTop > 2400
   ) {
     goUp.style.display = "block";
   } else {
@@ -114,20 +114,21 @@ line.style.strokeDasharray = length;
 line.style.strokeDashoffset = length;
 
 // Find scroll percentage on scroll (using cross-browser properties), and offset dash same amount as percentage scrolled
-window.addEventListener("scroll", showGoUp);
+window.addEventListener("scroll", drawLine);
 
-function showGoUp() {
+function drawLine() {
   var scrollpercent =
     (document.body.scrollTop + document.documentElement.scrollTop) /
     (document.documentElement.scrollHeight -
       document.documentElement.clientHeight);
 
-  var draw = length * scrollpercent * 0.85;
+  var draw = length * scrollpercent * 0.90;
 
   // Reverse the drawing (when scrolling upwards)
   line.style.strokeDashoffset = length - draw;
 }
 
+//JSON
 var json = null;
 loadJsonAndFillCards("small-card");
 
@@ -143,7 +144,7 @@ async function loadJsonAndFillCards(_id) {
     }
   }
 }
-
+//Create cards
 function fillCards(templateId, jsonBars) {
   // Get the HTML template
   const template = document.querySelector(`#${templateId}`);
@@ -154,6 +155,7 @@ function fillCards(templateId, jsonBars) {
     //Set card bg color
     const card = previewCard.querySelector('.card');
     card.style.backgroundColor = `#${bar.hexColor.primary[1]}`;
+    card.style.border = `2px solid #${bar.hexColor.primary[1]}`;
 
     // Get the card content elements
     const title = previewCard.querySelector(".title");
@@ -197,9 +199,10 @@ function fillCards(templateId, jsonBars) {
 
     const transports = previewCard.querySelector(".container:nth-child(3)");
     if (transports) {
-      transports.innerHTML = `<div class='directions'<p>${bar.transports.join(
-        " "
-      )}</p></br><p><span class='nobr'>${
+      const metroLines = `<p>${bar.transports.join(
+        ' '
+      )}</p>`;
+      transports.innerHTML = `<div class="directions"${metroLines}</br><p><span class="nobr">${
         bar.metroStationName
       }</p></span></div>`;
     }
