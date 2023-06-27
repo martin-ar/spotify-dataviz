@@ -194,17 +194,13 @@ function fillCards(templateId, jsonBars) {
 
     const openHours = previewCard.querySelector(".container:nth-child(2)");
     if (openHours) {
-      openHours.innerHTML = `<p><span class='nobr'>${bar.openDay}</span></p><p><span class='nobr'>${bar.openTime}</span></p>`;
+      openHours.innerHTML = `<p><span class='nobr'>${bar.openDay}</span><br><span class='nobr'>${bar.openTime}</span></p>`;
     }
 
     const transports = previewCard.querySelector(".container:nth-child(3)");
     if (transports) {
-      const metroLines = `<p>${bar.transports.join(
-        ' '
-      )}</p>`;
-      transports.innerHTML = `<div class="directions"${metroLines}</br><p><span class="nobr">${
-        bar.metroStationName
-      }</p></span></div>`;
+      const metroLines = `<p>${bar.transports.join(' ')}</p>`;
+      transports.innerHTML = `<div class="directions">${metroLines}<p><span class="nobr">${bar.metroStationName}</p></span></div>`;
     }
 
     // Add the preview card to the document

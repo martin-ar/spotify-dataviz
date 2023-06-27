@@ -22,6 +22,18 @@ body {
   font-family: 'LincolnMITRE';
   src: url("fonts/LincolnMITRE-LM.woff") format("woff");
 }
+p {
+  font-family: 'ApfelGrotezk', serif;
+  font-size: 1.5rem;
+}
+
+.info p {
+  font-size: 2rem;
+}
+
+.directions p {
+  font-size: 1.5rem;
+}
 .hero {
   height: 100vh;
   background-image: url('bg.png');
@@ -88,6 +100,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 .scroll-section {
@@ -162,6 +176,7 @@ body.hover-color1 {
 }
 
 .tags-wrapper .tag {
+  font-family: 'LincolnMITRE', sans-serif !important;
   border-radius: 0 !important;
   background-color: transparent !important;
   border: 3px solid !important;
@@ -183,6 +198,7 @@ body.hover-color1 {
 
 }
 .scroll-element {
+  max-width: 1100px;
   width: 45vh;
   height: 18vh;
 }
@@ -210,6 +226,11 @@ body.hover-color1 {
 #template .description p {
   text-align: justify;
   white-space: nowrap;
+}
+
+.address {
+  margin: 0;
+  padding: 0;
 }
 
 .nobr {
