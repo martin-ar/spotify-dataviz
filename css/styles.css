@@ -9,17 +9,17 @@ body {
   padding: 0px;
 }
 @font-face {
-  font-family: ApfelGrotezk;
+  font-family: 'ApfelGrotezk';
   src: url("assets/fonts/ApfelGrotezk-Regular.woff") format("woff");
 }
 
 @font-face {
-  font-family: GothamBook;
+  font-family: 'GothamBook';
   src: url("assets/fonts/GothamBook.otf") format("otf");
 }
 
 @font-face {
-  font-family: LincolnMITRE;
+  font-family: 'LincolnMITRE';
   src: url("assets/fonts/LincolnMITRE-LM.woff") format("woff");
 }
 .hero {
@@ -36,8 +36,9 @@ body {
 }
 
 .hero h1 {
+  font-family: 'LincolnMITRE', sans-serif !important;
   color: #FFFFFF;
-  font-size: 5rem;
+  font-size: 6rem;
 }
 
 .title {
@@ -49,10 +50,20 @@ body {
   margin: 0 auto;
 }
 .pitch {
-  margin: 15% 0;
-  padding: 0 20%;
-  text-align: center;
+  padding: 15rem 0;
+  text-align: left;
   background-color: #242035;
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-family: sans-serif;
+  line-height: 150%;
+  margin: 0 !important;
+}
+
+.pitch .title{
+  color: #FFFF00;
+  font-family: 'LincolnMITRE';
+  text-align: center;
 }
 .col {
   display: flex;

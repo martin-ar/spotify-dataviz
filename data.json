@@ -39,6 +39,9 @@
       "hexColor": {
         "primary": ["510072","83FD80"],
         "alternative": ["8204B5","050514"]
+      },
+      "placeHolder":{
+        "url" : "assets/img/p-atomic-cat-1.png"
       }
     },
     {
@@ -80,6 +83,9 @@
       "hexColor": {
         "primary": ["0057FF","FFFAE0"],
         "alternative": ["009EE2"]
+      },
+      "placeHolder":{
+        "url" : "assets/img/p-soif-1.png"
       }
     },
     {
@@ -119,6 +125,9 @@
       "hexColor": {
         "primary": ["FF55EE","FCFF7B"],
         "alternative": []
+      },
+      "placeHolder":{
+        "url" : "assets/img/p-atomic-cat-2.png"
       }
     },
     {
@@ -158,6 +167,9 @@
       "hexColor": {
         "primary": ["FFE6AE","E23C00"],
         "alternative": ["050514"]
+      },
+      "placeHolder":{
+        "url" : "https://placehold.co/600x600"
       }
     },
     {
@@ -199,6 +211,9 @@
       "hexColor": {
         "primary": ["ED5C32","FFFBD2"],
         "alternative": []
+      },
+      "placeHolder":{
+        "url" : "https://placehold.co/600x600"
       }
     },
     {
@@ -229,6 +244,9 @@
       "hexColor": {
         "primary": ["831919","FFE39C"],
         "alternative": []
+      },
+      "placeHolder":{
+        "url" : "https://placehold.co/600x600"
       }
     },
     {
@@ -259,6 +277,9 @@
       "hexColor": {
         "primary": ["FF55EE","000000"],
         "alternative": []
+      },
+      "placeHolder":{
+        "url" : "https://placehold.co/600x600"
       }
     }
   ]
