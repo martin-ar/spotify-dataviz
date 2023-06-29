@@ -1,22 +1,4 @@
-/**
- * This function renders preview cards
- */
-// function renderModules() {
-
-//   // get data from json
-//   // insert data into template
-//   // create cards and append DOM
-//   var temp = document.getElementsByTagName("template")[1];
-//   var clon = temp.content.cloneNode(true);
-
-//   // document.body.appendChild(clon);
-//   // console.log(clon);
-//   var thumbnail = document.getElementById("big-box");
-//   thumbnail.appendChild(clon);
-//   // thumbnail.innerHTML = clon;
-// }
-
-//JSON
+//Load JSON
 var json = null;
 loadJsonAndFillCards("small-card");
 
@@ -33,7 +15,9 @@ async function loadJsonAndFillCards(_id) {
     }
   }
 }
-
+/**
+ * This function creates the small preview card containers
+ */
 function createScrollElements(jsonBars) {
   const container = document.querySelector('.scroll-section');
   
@@ -81,7 +65,9 @@ function createScrollElements(jsonBars) {
     container.appendChild(elementContainer);
   });
 }
-//Create cards
+/**
+ * This function creates content for small preview cards
+ */
 function fillCards(templateId, jsonBars) {
   // Get the HTML template
   const template = document.querySelector(`#${templateId}`);
@@ -263,7 +249,7 @@ window.onload = function() {
     throttle(() => {
       handleScrollAnimation();
       throttleCount.innerHTML = count++;
-    }, 500);
+    }, 250);
   });
 
   // bouton pour remonter la page
@@ -309,7 +295,7 @@ window.onload = function() {
       (document.documentElement.scrollHeight -
         document.documentElement.clientHeight);
 
-    var draw = length * scrollpercent * 0.90;
+    var draw = (length * scrollpercent * 1.45) - 200;
 
     // Reverse the drawing (when scrolling upwards)
     line.style.strokeDashoffset = length - draw;

@@ -54,18 +54,17 @@
       ],
       "detail": "Un bar de quartier, simple, chaleureux et lumineux, La Soif vous offre un cadre idéal pour vos soirées réservées ou improvisées ! Entre amis, en afterwork ou anniversaire, là-bas vous pourrez profiter d’un espace intimiste à l’ambiance très vite animée et dansante. De plus, les propriétaires seront très fiers de vous servir sur leur magnifique comptoir boisé.",
       "address": {
-        "addressLine1": "123 Main St",
-        "zip": 12345,
-        "city": "Anytown"
+        "addressLine1": "131 rue Oberkampf",
+        "zip": 75011,
+        "city": "Paris"
       },
-      "openDay": "Everyday",
-      "openTime": "16:00 - 2:00",
+      "openDay": "Mardi - Samedi",
+      "openTime": "17:00 - 2:00",
       "transports": [
         2,
-        3,
-        4
+        3
       ],
-      "metroStationName": "Downtown",
+      "metroStationName": "Ménilmontant | Rue Saint-Maur",
       "links": {
         "types": [
           "twitter",
@@ -93,12 +92,12 @@
       "name": "L'Estaminet",
       "tags": [
         "populaire",
-        "cosy",
+        "????",
         "fermé"
       ],
       "detail": "L’Estaminet était anciennement un bar et restaurant à un coin de rue. Il proposait autant de plats de brasserie que de boissons rafraîchissantes. De ce qu’on peut observer, ils avaient l’habitude de faire des soirées à thématique pour réunir leur client, l’ambiance y semblait chaleureuse et accessible.",
       "address": {
-        "addressLine1": "76 Rue Jean-Pierre Timbaud",
+        "addressLine1": "116 rue Oberkampf",
         "zip": 75011,
         "city": "Paris"
       },
@@ -140,7 +139,7 @@
       ],
       "detail": "La dernière halte s’est faite au Café de Paris. En arrivant dans ce dernier bar de la rue, nous avons rencontré une barmaid très vivante et extravertie qui nous a appris qu’elle crée et concevait de nombreuses playlists, que ce soit pour ses amis, ou pour des bars qu’elle côtoie et connaît. De ce fait, nous avons découvert Le Popul'Air, qui n’est qu’autre qu’un théâtre et café.",
       "address": {
-        "addressLine1": "92 Rue de Ménilmontant",
+        "addressLine1": "36 rue Henri Chevreau",
         "zip": 75020,
         "city": "Paris"
       },
@@ -148,10 +147,9 @@
       "openTime": "11:00 - 2:00",
       "transports": [
         2,
-        3,
-        9
+        11
       ],
-      "metroStationName": "Ménilmontant|Père Lachaise",
+      "metroStationName": "Jourdain | Ménilmontant",
       "links": {
         "types": [
           "facebook"
@@ -182,18 +180,17 @@
       ],
       "detail": "Les frères sont de grands férus de vélo, c’est ce qui les rassemble et a fait naître ce bar à la décoration raffinée, sobre mais très personnalisée en référence à cette passion commune. Ils sont par ailleurs très fiers d’être des “finishers” du Paris Roubaix, une étape majeure du Tour de France 2022. Amateurs de vélo, au Dérailleur vous êtes certains de ne pas faire fausse route : vous y trouverez des compères de compétition qui sauront vous aiguiller et vous conseiller.",
       "address": {
-        "addressLine1": "12 Rue Feydeau",
-        "zip": 75002,
+        "addressLine1": "130 Rue Oberkampf",
+        "zip": 75011,
         "city": "Paris"
       },
-      "openDay": "Lundi - Dimanche",
-      "openTime": "18:00 - 2:00",
+      "openDay": "Mardi - Samedi",
+      "openTime": "17:00 - 2:00",
       "transports": [
-        3,
-        4,
-        8
+        2,
+        3
       ],
-      "metroStationName": "Parmentier",
+      "metroStationName": "Ménilmontant|Père Lachaise",
       "links": {
         "types": [
           "insta",
@@ -220,8 +217,9 @@
       "id": 5,
       "name": "REHAB",
       "tags": [
-        "classique",
-        "calme"
+        "secret",
+        "atypique",
+        "select"
       ],
       "detail": "Alors que le Normandy est en travaux, au sous-sol se cache un endroit curieux et intimiste, à l’ambiance des années 1920. Rehab est en fait un speakeasy accessible depuis une entrée secrète dans l’hôtel - derrière un miroir mais chuuut - et vous propose de découvrir une carte très spéciale, riche en surprises… Les mixologues auront de nombreuses potions à vous concocter : infusion au CBD, cocktails atypiques, tout est possible au Rehab. De plus, les lieux vous renverront près d’un siècle auparavant, de quoi perdre la notion du temps.",
       "address": {
@@ -231,7 +229,7 @@
       },
       "openDay": "Lundi - Dimanche",
       "openTime": "16:00 - 23:00",
-      "transports": [63, 69, 87],
+      "transports": [2, 3],
       "metroStationName": "Saint-Germain-des-Prés",
       "links": {
         "types": ["insta", "facebook"],
@@ -253,17 +251,18 @@
       "id": 6,
       "name": "La Fièvre",
       "tags": [
-        "classique",
-        "calme"
+        "convivial",
+        "cosy",
+        "clubbing"
       ],
-      "detail": "The Library Bar est un bar calme et élégant avec une collection impressionnante de livres. Le bar propose une grande variété de boissons, y compris des cocktails classiques, du whisky, du rhum et du gin. C'est un endroit idéal pour prendre un verre après une journée de travail ou pour discuter avec des amis dans une atmosphère détendue.",
+      "detail": "Au rez-de-chaussée, des néons pinks hypnotisant sont au rendez-vous au bar La Fièvre, alimenté par une décoration végétalisée qui escalade chaque mur. À l’étage, le mobilier vintage vous réchauffe et a les allures d’un cabinet de curiosité. Le lieu est propice à la dégustation de cocktails élaborés et inventifs accompagnée de petits plats à partager (ou non). Un bar à ne pas manquer si vous aimez les sorties bien animé sans renoncer à un personnel au petit soin.",
       "address": {
-        "addressLine1": "21 Rue de l'Université",
-        "zip": 75007,
+        "addressLine1": "108 Rue Oberkampf",
+        "zip": 75011,
         "city": "Paris"
       },
       "openDay": "Lundi - Dimanche",
-      "openTime": "16:00 - 23:00",
+      "openTime": "18:00 - 2:00",
       "transports": [2, 3],
       "metroStationName": "Ménilmontant|Parmentier",
       "links": {
@@ -271,8 +270,8 @@
         "urls": ["instagram.com/thelibrarybar", "facebook.com/thelibrarybar"]
       },
       "contact":{
-        "phoneNumber": ["+33 6 67 24 10 99", "+33 6 58 89 01 00"],
-        "email": "lemaitrefreres@gmail.com"
+        "phoneNumber": ["06 11 84 71 82"],
+        "email": "bluemagic.lafievre@gmail.com"
       },
       "hexColor": {
         "primary": ["FF55EE","000000"],
