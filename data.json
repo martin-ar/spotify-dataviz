@@ -127,7 +127,7 @@
         "alternative": []
       },
       "placeHolder":{
-        "url" : "assets/img/p-atomic-cat-2.png"
+        "url" : "assets/img/p-estaminet.png"
       }
     },
     {
@@ -169,7 +169,7 @@
         "alternative": ["050514"]
       },
       "placeHolder":{
-        "url" : "https://placehold.co/600x600"
+        "url" : "assets/img/p-populair.png"
       }
     },
     {
@@ -213,7 +213,7 @@
         "alternative": []
       },
       "placeHolder":{
-        "url" : "https://placehold.co/600x600"
+        "url" : "assets/img/p-derailleur.png"
       }
     },
     {
@@ -246,7 +246,7 @@
         "alternative": []
       },
       "placeHolder":{
-        "url" : "https://placehold.co/600x600"
+        "url" : "assets/img/p-rehab.png"
       }
     },
     {
@@ -279,7 +279,7 @@
         "alternative": []
       },
       "placeHolder":{
-        "url" : "https://placehold.co/600x600"
+        "url" : "assets/img/p-fievre.png"
       }
     }
   ]

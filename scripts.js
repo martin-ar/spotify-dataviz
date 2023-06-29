@@ -76,7 +76,7 @@ window.addEventListener("scroll", () => {
   throttle(() => {
     handleScrollAnimation();
     throttleCount.innerHTML = count++;
-  }, 250);
+  }, 500);
 });
 
 // bouton pour remonter la page
@@ -209,6 +209,10 @@ function fillCards(templateId, jsonBars) {
       preview.appendChild(previewCard);
     }
   });
+  const elementContainers = document.querySelectorAll('.element-container');
+  const lastElementContainer = elementContainers[elementContainers.length - 1];
+  lastElementContainer.style.marginBottom = '280px';
+
 }
 
 //greensock
