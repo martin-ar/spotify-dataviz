@@ -40,8 +40,8 @@
         "primary": ["510072","83FD80"],
         "alternative": ["8204B5","050514"]
       },
-      "placeHolder":{
-        "url" : "assets/img/p-atomic-cat-1.png"
+      "fullCard":{
+        "path" : "p-atomic-cat-1.png"
       }
     },
     {
@@ -84,8 +84,8 @@
         "primary": ["0057FF","FFFAE0"],
         "alternative": ["009EE2"]
       },
-      "placeHolder":{
-        "url" : "assets/img/p-soif-1.png"
+      "fullCard":{
+        "path" : "p-soif-1.png"
       }
     },
     {
@@ -126,8 +126,8 @@
         "primary": ["FF55EE","FCFF7B"],
         "alternative": []
       },
-      "placeHolder":{
-        "url" : "assets/img/p-estaminet.png"
+      "fullCard":{
+        "path" : "p-estaminet.png"
       }
     },
     {
@@ -168,8 +168,8 @@
         "primary": ["FFE6AE","E23C00"],
         "alternative": ["050514"]
       },
-      "placeHolder":{
-        "url" : "assets/img/p-populair.png"
+      "fullCard":{
+        "path" : "p-populair.png"
       }
     },
     {
@@ -212,8 +212,8 @@
         "primary": ["ED5C32","FFFBD2"],
         "alternative": []
       },
-      "placeHolder":{
-        "url" : "assets/img/p-derailleur.png"
+      "fullCard":{
+        "path" : "p-derailleur.png"
       }
     },
     {
@@ -245,8 +245,8 @@
         "primary": ["831919","FFE39C"],
         "alternative": []
       },
-      "placeHolder":{
-        "url" : "assets/img/p-rehab.png"
+      "fullCard":{
+        "path" : "p-rehab.png"
       }
     },
     {
@@ -278,8 +278,8 @@
         "primary": ["FF55EE","000000"],
         "alternative": []
       },
-      "placeHolder":{
-        "url" : "assets/img/p-fievre.png"
+      "fullCard":{
+        "path" : "p-fievre.png"
       }
     }
   ]
