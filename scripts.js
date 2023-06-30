@@ -1,21 +1,28 @@
 gsap.registerPlugin(Flip, Draggable);
-
-//Load JSON
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0); // Scroll to the top of the page on unload
+};
 var json = null;
 loadJsonAndFillCards("small-card");
 
-async function loadJsonAndFillCards(_id) {
-  if (json == null) {
-    try {
-      const response = await fetch("data.json"); // Fetch the JSON file
-      json = await response.json(); // Parse the JSON response
-
-      createScrollElements(json.bars);
-      fillCards(_id, json.bars);
-    } catch (error) {
-      console.error(error);
+function loadJsonAndFillCards(_id) {
+  return new Promise((resolve, reject) => {
+    if (json != null) {
+      resolve(json); // JSON is already loaded, resolve immediately
+    } else {
+      fetch('data.json?v=' + Date.now())
+        .then(response => response.json())
+        .then(data => {
+          json = data; // Store the JSON data
+          createScrollElements(json.bars);
+          fillCards(_id, json.bars);
+          resolve(json); // Resolve the promise with the JSON data
+        })
+        .catch(error => {
+          reject(error); // Reject the promise with the error
+        });
     }
-  }
+  });
 }
 /**
  * This function creates the small preview card containers
@@ -98,7 +105,7 @@ function fillCards(templateId, jsonBars) {
       logo.src = `assets/img/${bar.image.logo}`;
     }
 
-    const tags = previewCard.querySelector(".tags-wrapper");
+    var tags = previewCard.querySelector(".tags-wrapper");
     if (tags) {
       var color = bar.id == 6 ? bar.hexColor.alternative[0] : bar.hexColor.primary[0] ;
       tags.innerHTML = bar.tags
@@ -112,6 +119,10 @@ function fillCards(templateId, jsonBars) {
       // knowMoreButton.classList.add("open-full-size");
       tags.appendChild(knowMoreButton);
     }
+
+    tags = tags.querySelectorAll('.tag');
+    var lastTag = tags[tags.length - 1];
+    lastTag.classList.add('last');
 
     const description = previewCard.querySelector(".description");
     if (description) {
@@ -142,7 +153,7 @@ function fillCards(templateId, jsonBars) {
     const transports = previewCard.querySelector(".container:nth-child(3)");
     if (transports) {
       const metroLines = `<p>${bar.transports.join(" ")}</p>`;
-      transports.innerHTML = `<div class="directions">${metroLines}<p><span class="nobr">${bar.metroStationName}</p></span></div>`;
+      transports.innerHTML = `<div class="directions">${metroLines}<p><span style="padding: 0;">${bar.metroStationName}</p></span></div>`;
     }
 
     // Add the preview card to the document
@@ -292,7 +303,7 @@ window.onload = function () {
     // Reverse the drawing (when scrolling upwards)
     line.style.strokeDashoffset = length - draw;
   }
-};
+}
 // bouton pour remonter la page
 let goUp = document.getElementById("go-up");
 

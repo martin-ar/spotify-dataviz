@@ -46,7 +46,6 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
 }
 
 .hero h1 {
@@ -59,6 +58,10 @@ p {
 
 .title {
   font-size: 2.5rem !important;
+}
+
+.logo {
+  padding-left: 0.5rem;
 }
 
 .container {
@@ -112,9 +115,7 @@ p {
   background-color: #242035;
   padding-bottom: 1px;
 }
-body.hover-color1 {
-  background-color: red;
-}
+
 #svg {
   position:absolute;
   height: 460%;
@@ -179,6 +180,11 @@ body.hover-color1 {
   transition: opacity 2.5s ease;
 }
 
+.tags-wrapper {
+
+  min-width: 35vw;
+}
+
 .tags-wrapper .tag {
   font-family: 'LincolnMITRE', sans-serif !important;
   border-radius: 0 !important;
@@ -227,9 +233,16 @@ body.hover-color1 {
   transition: opacity 1s 700ms;
 }
 
-#template .description p {
-  text-align: justify;
-  white-space: nowrap;
+.last {
+  opacity: 0;
+  transition: opacity, 700ms;
+}
+.scroll-element:hover .last {
+  opacity: 1 !important;
+}
+
+.description {
+  font-size: 1.25rem !important;
 }
 
 .alternative {
