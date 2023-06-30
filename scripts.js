@@ -116,6 +116,9 @@ function fillCards(templateId, jsonBars) {
     const description = previewCard.querySelector(".description");
     if (description) {
       description.innerHTML = bar.detail;
+      if (bar.id == 6) {
+        description.classList.add('alternative');
+      }
     }
     const aside = previewCard.querySelector(".info");
     const asideColor =
@@ -183,7 +186,7 @@ window.onload = function () {
     clickedElement.addEventListener('mousewheel DOMMouseScroll wheel', function(event) {
       event.preventDefault(); // Prevent default scroll behavior on the body element
     });
-    
+
     function closeFullSizeHandler() {
       const fullSize = clickedElement.fullSize;
       const thumbnail = clickedElement.thumbnail;

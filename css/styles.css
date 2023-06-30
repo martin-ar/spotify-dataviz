@@ -232,6 +232,10 @@ body.hover-color1 {
   white-space: nowrap;
 }
 
+.alternative {
+  color: #FF55EE !important;
+}
+
 .address {
   margin: 0;
   padding: 0;
