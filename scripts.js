@@ -64,7 +64,7 @@ function createScrollElements(jsonBars) {
     // Create the full-size image
     const fullSizeImg = document.createElement("img");
     fullSizeImg.classList.add("full-size-img");
-    fullSizeImg.src = `assets/img/${bar.fullCard.path}`;
+    fullSizeImg.src = `assets/img/${bar.image.fullCard}`;
     fullSize.appendChild(fullSizeImg);
 
     // Create the placeholder element
@@ -92,19 +92,19 @@ function fillCards(templateId, jsonBars) {
     card.style.border = `2px solid #${bar.hexColor.primary[1]}`;
 
     // Get the card content elements
-    const title = previewCard.querySelector(".title");
+    const logo = previewCard.querySelector(".logo");
 
-    if (title) {
-      title.textContent = bar.name;
-      title.style.color = `#${bar.hexColor.primary[0]}`;
+    if (logo) {
+      logo.src = `assets/img/${bar.image.logo}`;
     }
 
     const tags = previewCard.querySelector(".tags-wrapper");
     if (tags) {
+      var color = bar.id == 6 ? bar.hexColor.alternative[0] : bar.hexColor.primary[0] ;
       tags.innerHTML = bar.tags
         .map(
           (tag) =>
-            `<span class="tag" style="color:#${bar.hexColor.primary[0]} !important;border-color:#${bar.hexColor.primary[0]} !important;" >${tag}</span>`
+            `<span class="tag" style="color:#${color} !important;border-color:#${color} !important;" >${tag}</span>`
         )
         .join("");
       const knowMoreButton = document.createElement("div");
@@ -164,21 +164,26 @@ window.onload = function () {
       const fullSize = container.querySelector(".full-size");
       const thumbnail = container.querySelector(".thumbnail");
       const closeButton = container.querySelector(".close-full-size");
-
       thumbnail.classList.toggle("active");
       fullSize.classList.toggle("active");
 
       Draggable.create(fullSize);
       Draggable.create(clickedElement);
-
+      
       clickedElement.fullSize = fullSize;
       clickedElement.thumbnail = thumbnail;
       clickedElement.close = closeButton;
-
+      
       clickedElement.scrollTop = 0;
       window.addEventListener("mousedown", closeFullSizeHandler);
       closeButton.addEventListener("click", closeFullSizeHandler);
+      
     }
+
+    clickedElement.addEventListener('mousewheel DOMMouseScroll wheel', function(event) {
+      event.preventDefault(); // Prevent default scroll behavior on the body element
+    });
+    
     function closeFullSizeHandler() {
       const fullSize = clickedElement.fullSize;
       const thumbnail = clickedElement.thumbnail;

@@ -40,8 +40,9 @@
         "primary": ["510072","83FD80"],
         "alternative": ["8204B5","050514"]
       },
-      "fullCard":{
-        "path" : "p-atomic-cat-1.png"
+      "image":{
+        "fullCard" : "p-atomic-cat-1.png",
+        "logo" : "logo-atomic-cat.png"
       }
     },
     {
@@ -83,8 +84,9 @@
         "primary": ["0057FF","FFFAE0"],
         "alternative": ["009EE2"]
       },
-      "fullCard":{
-        "path" : "p-soif-1.png"
+      "image":{
+        "fullCard" : "p-soif-1.png",
+        "logo" : "logo-la-soif.png"
       }
     },
     {
@@ -125,8 +127,9 @@
         "primary": ["FF55EE","FCFF7B"],
         "alternative": []
       },
-      "fullCard":{
-        "path" : "p-estaminet.png"
+      "image":{
+        "fullCard" : "p-estaminet.png",
+        "logo" : "logo-estaminet.png"
       }
     },
     {
@@ -166,8 +169,9 @@
         "primary": ["FFE6AE","E23C00"],
         "alternative": ["050514"]
       },
-      "fullCard":{
-        "path" : "p-populair.png"
+      "image":{
+        "fullCard" : "p-populair.png",
+        "logo" : "logo-populair.png"
       }
     },
     {
@@ -209,8 +213,9 @@
         "primary": ["ED5C32","FFFBD2"],
         "alternative": []
       },
-      "fullCard":{
-        "path" : "p-derailleur.png"
+      "image":{
+        "fullCard" : "p-derailleur.png",
+        "logo" : "logo-derailleur.png"
       }
     },
     {
@@ -243,8 +248,9 @@
         "primary": ["831919","FFE39C"],
         "alternative": []
       },
-      "fullCard":{
-        "path" : "p-rehab.png"
+      "image":{
+        "fullCard" : "p-rehab.png",
+        "logo" : "logo-rehab.png"
       }
     },
     {
@@ -275,10 +281,11 @@
       },
       "hexColor": {
         "primary": ["FF55EE","000000"],
-        "alternative": []
+        "alternative": ["83FD81"]
       },
-      "fullCard":{
-        "path" : "p-fievre.png"
+      "image":{
+        "fullCard" : "p-fievre.png",
+        "logo" : "logo-fievre.png"
       }
     }
   ]
