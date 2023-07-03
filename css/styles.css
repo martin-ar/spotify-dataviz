@@ -48,6 +48,12 @@ p {
   align-items: center;
 }
 
+.map {
+  background-size: 80%;
+  background-image: url('map-bars-paris-02.jpg');
+  background-color: #231F20;
+}
+
 .hero h1 {
   font-family: 'LincolnMITRE', sans-serif !important;
   color: #FFFFFF;
