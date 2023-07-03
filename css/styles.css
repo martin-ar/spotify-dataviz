@@ -3,7 +3,7 @@
   box-sizing: border-box;
 }
 html {
-  background-color:#242035;
+  background-color:#231F20;
 }
 body {
   width: 100%;
@@ -157,7 +157,7 @@ p {
 .thumbnail {
   visibility: visible;
   overflow: hidden;
-  background-color: #242035 !important;
+  background-color: #231F20 !important;
   border: none;
 }
 .full-size-img {
@@ -298,7 +298,7 @@ p {
 
 #go-up:hover {
   background-color: #ffee00;
-  color: #242035;
+  color: #231F20;
 }
 
 
