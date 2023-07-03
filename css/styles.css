@@ -37,7 +37,7 @@ p {
   font-size: 1.25rem;
 }
 .hero {
-  height: 8rem;
+  height: 10rem;
   background-color: #050505;
   background-position: center;
   display: flex;
@@ -47,7 +47,7 @@ p {
 }
 
 .map {
-  height: 680px;
+  height: 740px;
   background-position-y: 0;
   background-size: 80%;
   background-repeat: no-repeat;
@@ -57,7 +57,7 @@ p {
 
 .hero h1 {
   position: absolute;
-  top: 4rem;
+  top: 6rem;
   font-family: 'LincolnMITRE', sans-serif !important;
   color: #FFFFFF;
   font-size: 6rem;
