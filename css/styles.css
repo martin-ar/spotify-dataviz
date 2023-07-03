@@ -160,7 +160,7 @@ p {
 .thumbnail {
   visibility: visible;
   overflow: hidden;
-  background-color: #231F20 !important;
+  background-color: rgb(0,0,0,0) !important;
   border: none;
 }
 .full-size-img {
