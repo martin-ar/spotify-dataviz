@@ -37,10 +37,8 @@ p {
   font-size: 1.25rem;
 }
 .hero {
-  height: 100vh;
-  background-image: url('bg.png');
-  background-size: cover;
-  background-repeat: no-repeat;
+  height: 8rem;
+  background-color: #050505;
   background-position: center;
   display: flex;
   flex-direction: column;
@@ -49,12 +47,17 @@ p {
 }
 
 .map {
+  height: 680px;
+  background-position-y: 0;
   background-size: 80%;
-  background-image: url('map-bars-paris-02.jpg');
-  background-color: #231F20;
+  background-repeat: no-repeat;
+  background-image: url('map-bars-paris-02.png');
+  background-color: #050505;
 }
 
 .hero h1 {
+  position: absolute;
+  top: 4rem;
   font-family: 'LincolnMITRE', sans-serif !important;
   color: #FFFFFF;
   font-size: 6rem;
@@ -77,7 +80,7 @@ p {
 .pitch {
   padding: 15rem 0;
   text-align: left;
-  background-color: #242035;
+  background-color: #14121B;
   color: #FFFFFF;
   font-size: 1rem;
   font-family: sans-serif;
@@ -118,7 +121,7 @@ p {
 }
 
 .scroll-section {
-  background-color: #242035;
+  background-color: #14121B;
   padding-bottom: 1px;
 }
 
